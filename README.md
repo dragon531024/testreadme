@@ -63,113 +63,322 @@ The documentation for the Material Kit is hosted at our [website](https://demos.
 Within the download you'll find the following directories and files:
 
 ```
-Argon Dashboard React
-.
-├── Documentation
-│   └── documentation.html
-├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
-├── LICENSE
-├── README.md
-├── package.json
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-└── src
-    ├── assets
-    │   ├── css
-    │   │   ├── argon-dashboard-react.css
-    │   │   ├── argon-dashboard-react.css.map
-    │   │   └── argon-dashboard-react.min.css
-    │   ├── fonts
-    │   │   └── nucleo
-    │   ├── img
-    │   │   ├── brand
-    │   │   ├── icons
-    │   │   │   └── common
-    │   │   └── theme
-    │   ├── scss
-    │   │   ├── argon-dashboard-react.scss
-    │   │   ├── bootstrap
-    │   │   │   ├── mixins
-    │   │   │   └── utilities
-    │   │   ├── core
-    │   │   │   ├── alerts
-    │   │   │   ├── avatars
-    │   │   │   ├── badges
-    │   │   │   ├── buttons
-    │   │   │   ├── cards
-    │   │   │   ├── charts
-    │   │   │   ├── close
-    │   │   │   ├── custom-forms
-    │   │   │   ├── dropdowns
-    │   │   │   ├── footers
-    │   │   │   ├── forms
-    │   │   │   ├── headers
-    │   │   │   ├── icons
-    │   │   │   ├── list-groups
-    │   │   │   ├── maps
-    │   │   │   ├── masks
-    │   │   │   ├── mixins
-    │   │   │   ├── modals
-    │   │   │   ├── navbars
-    │   │   │   ├── navs
-    │   │   │   ├── paginations
-    │   │   │   ├── popovers
-    │   │   │   ├── progresses
-    │   │   │   ├── separators
-    │   │   │   ├── tables
-    │   │   │   ├── type
-    │   │   │   ├── utilities
-    │   │   │   └── vendors
-    │   │   ├── custom
-    │   │   └── react
-    │   └── vendor
-    │       ├── @fortawesome
-    │       │   └── fontawesome-free
-    │       │       ├── LICENSE.txt
-    │       │       ├── css
-    │       │       ├── js
-    │       │       ├── less
-    │       │       ├── scss
-    │       │       ├── sprites
-    │       │       ├── svgs
-    │       │       │   ├── brands
-    │       │       │   ├── regular
-    │       │       │   └── solid
-    │       │       └── webfonts
-    │       └── nucleo
-    │           ├── css
-    │           └── fonts
-    ├── components
-    │   ├── Footers
-    │   │   ├── AdminFooter.jsx
-    │   │   └── AuthFooter.jsx
-    │   ├── Headers
-    │   │   ├── Header.jsx
-    │   │   └── UserHeader.jsx
-    │   ├── Navbars
-    │   │   ├── AdminNavbar.jsx
-    │   │   └── AuthNavbar.jsx
-    │   └── Sidebar
-    │       └── Sidebar.jsx
-    ├── index.js
-    ├── layouts
-    │   ├── Admin.jsx
-    │   └── Auth.jsx
-    ├── routes.js
-    ├── variables
-    │   └── charts.jsx
-    └── views
-        ├── Index.jsx
-        └── examples
-            ├── Icons.jsx
-            ├── Login.jsx
-            ├── Maps.jsx
-            ├── Profile.jsx
-            ├── Register.jsx
-            └── Tables.jsx
+Application for Route Managing in SDN
+
+project
+ ┣ .git
+ ┃ ┣ hooks
+ ┃ ┃ ┣ applypatch-msg.sample
+ ┃ ┃ ┣ commit-msg.sample
+ ┃ ┃ ┣ fsmonitor-watchman.sample
+ ┃ ┃ ┣ post-update.sample
+ ┃ ┃ ┣ pre-applypatch.sample
+ ┃ ┃ ┣ pre-commit.sample
+ ┃ ┃ ┣ pre-merge-commit.sample
+ ┃ ┃ ┣ pre-push.sample
+ ┃ ┃ ┣ pre-rebase.sample
+ ┃ ┃ ┣ pre-receive.sample
+ ┃ ┃ ┣ prepare-commit-msg.sample
+ ┃ ┃ ┗ update.sample
+ ┃ ┣ info
+ ┃ ┃ ┗ exclude
+ ┃ ┣ logs
+ ┃ ┃ ┣ refs
+ ┃ ┃ ┃ ┣ heads
+ ┃ ┃ ┃ ┃ ┗ master
+ ┃ ┃ ┃ ┗ remotes
+ ┃ ┃ ┃ ┃ ┗ origin
+ ┃ ┃ ┃ ┃ ┃ ┗ HEAD
+ ┃ ┃ ┗ HEAD
+ ┃ ┣ objects
+ ┃ ┃ ┣ 20
+ ┃ ┃ ┃ ┗ 9e7d4716cda4979d24371bdaec3da836f72ad9
+ ┃ ┃ ┣ ff
+ ┃ ┃ ┃ ┗ 53ea4d34553f3645778f873d6c3c2873e0f641
+ ┃ ┃ ┣ info
+ ┃ ┃ ┗ pack
+ ┃ ┃ ┃ ┣ pack-733e68fd2a7e8dc05c7f272957188bbd3bd9b22e.idx
+ ┃ ┃ ┃ ┗ pack-733e68fd2a7e8dc05c7f272957188bbd3bd9b22e.pack
+ ┃ ┣ refs
+ ┃ ┃ ┣ heads
+ ┃ ┃ ┃ ┗ master
+ ┃ ┃ ┣ remotes
+ ┃ ┃ ┃ ┗ origin
+ ┃ ┃ ┃ ┃ ┗ HEAD
+ ┃ ┃ ┗ tags
+ ┃ ┣ config
+ ┃ ┣ description
+ ┃ ┣ HEAD
+ ┃ ┣ index
+ ┃ ┗ packed-refs
+ ┣ .github
+ ┃ ┗ workflows
+ ┃ ┃ ┗ main.yml
+ ┣ Documentation
+ ┃ ┗ documentation.html
+ ┣ public
+ ┃ ┣ apple-icon.png
+ ┃ ┣ Eroute.png
+ ┃ ┣ favicon.ico
+ ┃ ┣ index.html
+ ┃ ┗ manifest.json
+ ┣ src
+ ┃ ┣ assets
+ ┃ ┃ ┣ css
+ ┃ ┃ ┃ ┣ argon-dashboard-react.css
+ ┃ ┃ ┃ ┣ argon-dashboard-react.css.map
+ ┃ ┃ ┃ ┗ argon-dashboard-react.min.css
+ ┃ ┃ ┣ fonts
+ ┃ ┃ ┃ ┣ nucleo.eot
+ ┃ ┃ ┃ ┣ nucleo.ttf
+ ┃ ┃ ┃ ┣ nucleo.woff
+ ┃ ┃ ┃ ┗ nucleo.woff2
+ ┃ ┃ ┣ img
+ ┃ ┃ ┃ ┣ brand
+ ┃ ┃ ┃ ┃ ┣ argon-react-white.png
+ ┃ ┃ ┃ ┃ ┣ argon-react.png
+ ┃ ┃ ┃ ┃ ┣ blue.png
+ ┃ ┃ ┃ ┃ ┣ Eroute.png
+ ┃ ┃ ┃ ┃ ┣ favicon.png
+ ┃ ┃ ┃ ┃ ┗ white.png
+ ┃ ┃ ┃ ┣ icons
+ ┃ ┃ ┃ ┃ ┗ common
+ ┃ ┃ ┃ ┃ ┃ ┣ github.svg
+ ┃ ┃ ┃ ┃ ┃ ┗ google.svg
+ ┃ ┃ ┃ ┣ theme
+ ┃ ┃ ┃ ┃ ┣ angular.jpg
+ ┃ ┃ ┃ ┃ ┣ bootstrap.jpg
+ ┃ ┃ ┃ ┃ ┣ profile-cover.jpg
+ ┃ ┃ ┃ ┃ ┣ react.jpg
+ ┃ ┃ ┃ ┃ ┣ sketch.jpg
+ ┃ ┃ ┃ ┃ ┣ team-1-800x800.jpg
+ ┃ ┃ ┃ ┃ ┣ team-2-800x800.jpg
+ ┃ ┃ ┃ ┃ ┣ team-3-800x800.jpg
+ ┃ ┃ ┃ ┃ ┣ team-4-800x800.jpg
+ ┃ ┃ ┃ ┃ ┗ vue.jpg
+ ┃ ┃ ┃ ┗ topopic
+ ┃ ┃ ┃ ┃ ┣ host.png
+ ┃ ┃ ┃ ┃ ┗ switch.png
+ ┃ ┃ ┣ plugins
+ ┃ ┃ ┃ ┗ nucleo
+ ┃ ┃ ┃ ┃ ┣ css
+ ┃ ┃ ┃ ┃ ┃ ┣ nucleo-svg.css
+ ┃ ┃ ┃ ┃ ┃ ┗ nucleo.css
+ ┃ ┃ ┃ ┃ ┗ fonts
+ ┃ ┃ ┃ ┃ ┃ ┣ nucleo-icons.eot
+ ┃ ┃ ┃ ┃ ┃ ┣ nucleo-icons.svg
+ ┃ ┃ ┃ ┃ ┃ ┣ nucleo-icons.ttf
+ ┃ ┃ ┃ ┃ ┃ ┣ nucleo-icons.woff
+ ┃ ┃ ┃ ┃ ┃ ┗ nucleo-icons.woff2
+ ┃ ┃ ┗ scss
+ ┃ ┃ ┃ ┣ argon-dashboard
+ ┃ ┃ ┃ ┃ ┣ custom
+ ┃ ┃ ┃ ┃ ┃ ┣ alerts
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _alert-dismissible.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _alert.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ avatars
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _avatar-group.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _avatar.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ badges
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _badge-circle.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _badge-dot.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _badge.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ buttons
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _button-brand.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _button-icon.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _button.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ cards
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _card-animations.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _card-blockquote.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _card-profile.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _card-stats.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _card.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ charts
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _chart.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ close
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _close.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ custom-forms
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _custom-checkbox.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _custom-control.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _custom-form.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _custom-radio.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _custom-toggle.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ dropdowns
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _dropdown.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ footers
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _footer.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ forms
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _form-validation.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _form.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _input-group.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ headers
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _header.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ icons
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _icon-shape.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _icon.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ list-groups
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _list-group.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ maps
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _map.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ masks
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _mask.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ mixins
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _alert.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _background-variant.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _badge.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _buttons.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _forms.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _icon.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _modals.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _popover.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ modals
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _modal.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ navbars
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _navbar-collapse.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _navbar-dropdown.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _navbar-search.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _navbar-vertical.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _navbar.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ navs
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _nav-pills.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _nav.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ paginations
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _pagination.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ popovers
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _popover.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ progresses
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _progress.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ separators
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _separator.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ tables
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _table.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ type
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _article.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _display.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _heading.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _type.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ utilities
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _backgrounds.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _blurable.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _floating.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _helper.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _image.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _opacity.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _overflow.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _position.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _shadows.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _sizing.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _spacing.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _text.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _transform.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ vendors
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _bootstrap-datepicker.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _headroom.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┣ _nouislider.scss
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ _scrollbar.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _alert.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _avatar.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _badge.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _buttons.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _card.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _chart.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _close.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _components.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _content.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _custom-forms.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _dropdown.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _footer.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _forms.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _functions.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _header.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _icons.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _input-group.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _list-group.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _map.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _mask.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _mixins.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _modal.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _nav.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _navbar.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _pagination.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _popover.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _progress.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _reboot.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _section.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _separator.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _tables.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _type.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _utilities.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _variables.scss
+ ┃ ┃ ┃ ┃ ┃ ┗ _vendors.scss
+ ┃ ┃ ┃ ┃ ┗ docs
+ ┃ ┃ ┃ ┃ ┃ ┣ _clipboard-js.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _component-examples.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _content.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _footer.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _nav.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _prism.scss
+ ┃ ┃ ┃ ┃ ┃ ┣ _sidebar.scss
+ ┃ ┃ ┃ ┃ ┃ ┗ _variables.scss
+ ┃ ┃ ┃ ┣ react
+ ┃ ┃ ┃ ┃ ┣ bootstrap
+ ┃ ┃ ┃ ┃ ┃ ┗ _spinners.scss
+ ┃ ┃ ┃ ┃ ┣ plugins
+ ┃ ┃ ┃ ┃ ┃ ┗ _plugin-react-datetime.scss
+ ┃ ┃ ┃ ┃ ┣ react-differences.scss
+ ┃ ┃ ┃ ┃ ┣ _buttons.scss
+ ┃ ┃ ┃ ┃ ┣ _mixins.scss
+ ┃ ┃ ┃ ┃ ┣ _navbar-dropdown.scss
+ ┃ ┃ ┃ ┃ ┣ _navbar.scss
+ ┃ ┃ ┃ ┃ ┗ _tables.scss
+ ┃ ┃ ┃ ┗ argon-dashboard-react.scss
+ ┃ ┣ components
+ ┃ ┃ ┣ Footers
+ ┃ ┃ ┃ ┣ AdminFooter.js
+ ┃ ┃ ┃ ┗ AuthFooter.js
+ ┃ ┃ ┣ Headers
+ ┃ ┃ ┃ ┣ Header.js
+ ┃ ┃ ┃ ┗ UserHeader.js
+ ┃ ┃ ┣ Navbars
+ ┃ ┃ ┃ ┣ AdminNavbar.js
+ ┃ ┃ ┃ ┗ AuthNavbar.js
+ ┃ ┃ ┣ Sidebar
+ ┃ ┃ ┃ ┗ Sidebar.js
+ ┃ ┃ ┗ Topology
+ ┃ ┃ ┃ ┣ configModal.jsx
+ ┃ ┃ ┃ ┣ network.jsx
+ ┃ ┃ ┃ ┣ PostConfig.jsx
+ ┃ ┃ ┃ ┣ showConfig.jsx
+ ┃ ┃ ┃ ┣ thing.jsx
+ ┃ ┃ ┃ ┣ TopologyConfig.jsx
+ ┃ ┃ ┃ ┗ useWindowSize.js
+ ┃ ┣ layouts
+ ┃ ┃ ┣ Admin.js
+ ┃ ┃ ┗ Auth.js
+ ┃ ┣ variables
+ ┃ ┃ ┗ charts.js
+ ┃ ┣ views
+ ┃ ┃ ┣ examples
+ ┃ ┃ ┃ ┣ Icons.js
+ ┃ ┃ ┃ ┣ Login.js
+ ┃ ┃ ┃ ┣ Maps.js
+ ┃ ┃ ┃ ┣ Profile.js
+ ┃ ┃ ┃ ┣ Register.js
+ ┃ ┃ ┃ ┗ Tables.js
+ ┃ ┃ ┗ Index.js
+ ┃ ┣ index.js
+ ┃ ┣ routes.js
+ ┃ ┣ store.js
+ ┃ ┗ switchSlice.js
+ ┣ .gitignore
+ ┣ CHANGELOG.md
+ ┣ gulpfile.js
+ ┣ ISSUE_TEMPLATE.md
+ ┣ jsconfig.json
+ ┣ LICENSE
+ ┣ package-lock.json
+ ┣ package.json
+ ┗ README.md
 ```
 
 ## Browser Support
